@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form khảo sát</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #fafafa; }
+    form { background: white; padding: 20px; border-radius: 10px; width: 400px; margin: auto; }
+    label { display: block; margin: 10px 0 5px; }
+    textarea { width: 100%; height: 80px; padding: 8px; border-radius: 6px; border: 1px solid #ccc; }
+    .section { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <h2>Khảo sát ý kiến</h2>
+  <form>
+    <div class="section">
+      <label>Bạn thích sản phẩm nào nhất?</label>
+      <input type="radio" name="sp" value="A"> Sản phẩm A <br>
+      <input type="radio" name="sp" value="B"> Sản phẩm B <br>
+      <input type="radio" name="sp" value="C"> Sản phẩm C
+    </div>
+    <div class="section">
+      <label>Bạn quan tâm đến tính năng nào?</label>
+      <input type="checkbox" value="design"> Thiết kế <br>
+      <input type="checkbox" value="price"> Giá cả <br>
+      <input type="checkbox" value="quality"> Chất lượng
+    </div>
+    <div class="section">
+      <label>Ý kiến thêm:</label>
+      <textarea></textarea>
+    </div>
+    <button type="submit">Gửi</button>
+  </form>
+</body>
+</html>

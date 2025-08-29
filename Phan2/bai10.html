@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+        h1, p {
+            text-align: center;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Cá Nhân</h1>
+    <p>Dưới đây là một số dự án tôi đã thực hiện:</p>
+    <div class="portfolio">
+        <div class="project">
+            <img src="Portfolio1.png" alt="Dự án 1">
+            <h3>Dự án Website bán hàng</h3>
+            <p>Xây dựng website bán hàng cơ bản bằng HTML/CSS.</p>
+        </div>
+        <div class="project">
+            <img src="Portfolio1.png" alt="Dự án 2">
+            <h3>Dự án Blog cá nhân</h3>
+            <p>Thiết kế giao diện blog cá nhân với form bình luận.</p>
+        </div>
+        <div class="project">
+            <img src="Portfolio1.png" alt="Dự án 3">
+            <h3>Dự án Portfolio</h3>
+            <p>Tạo portfolio cá nhân để giới thiệu dự án.</p>
+        </div>
+    </div>
+</body>
+</html>

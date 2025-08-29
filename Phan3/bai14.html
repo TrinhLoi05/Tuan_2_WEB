@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Phản hồi khách hàng</title>
+  <style>
+    body { font-family: Arial; background: #f9f9f9; padding: 30px; }
+    form {
+      background: white;
+      width: 400px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    textarea, input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .stars input { display: none; }
+    .stars label {
+      font-size: 24px;
+      color: gray;
+      cursor: pointer;
+    }
+    .stars input:checked ~ label { color: gold; }
+    button {
+      background: #2d0f53; color: white;
+      border: none; padding: 10px 20px;
+      border-radius: 6px; cursor: pointer;
+    }
+    button:hover { background: #d62828; }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Gửi phản hồi</h2>
+  <form>
+    <div class="stars">
+      <input type="radio" id="star5" name="rate"><label for="star5"></label>
+      <input type="radio" id="star4" name="rate"><label for="star4"></label>
+      <input type="radio" id="star3" name="rate"><label for="star3"></label>
+      <input type="radio" id="star2" name="rate"><label for="star2"></label>
+      <input type="radio" id="star1" name="rate"><label for="star1"></label>
+    </div>
+    <textarea placeholder="Ý kiến của bạn"></textarea>
+    <input type="email" placeholder="Email của bạn" required>
+    <button type="submit">Gửi</button>
+  </form>
+</body>
+</html>
